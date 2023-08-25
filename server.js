@@ -29,7 +29,7 @@ const connect = async()=> {
 }
 //middleware
 const corsOptions = {
-    origin: 'https://front-three-black.vercel.app',
+    origin: 'https://frontturismo.vercel.app',
     credentials: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     optionsSuccessStatus: 204
@@ -44,7 +44,7 @@ app.use('/api/v1/users', userRoute);
 app.use('/api/v1/review', reviewRoute);
 app.use('/api/v1/booking', bookingRoute);
 
-
+console.log(cors());
 app.listen(port, ()=> {
     connect();
     console.log(`Server is running on ${port}`)
