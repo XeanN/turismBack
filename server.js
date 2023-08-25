@@ -29,7 +29,7 @@ const connect = async()=> {
 }
 //middleware
 const corsOptions = {
-    origin: 'https://turism-front.vercel.app',
+    origin: 'https://front-three-black.vercel.app',
     credentials: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     optionsSuccessStatus: 204
